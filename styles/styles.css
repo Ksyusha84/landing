@@ -335,7 +335,7 @@
 
 .team {
     padding-top: 60px;
-    padding-bottom: 12px;
+    padding-bottom: 120px;
 
 }
 
@@ -497,4 +497,84 @@
     width: 198px;
     height: 218px;
     background-color: gray;
+}
+
+/*Subscribe*/
+
+.subscribe {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    background-color: #2D2D2D;
+    padding-top: 124px;
+    padding-bottom: 140px;
+}
+
+.subscribe__header {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe__heading {
+    margin: 0;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.05px;
+    color: #FFFFFF;
+}
+
+.subscribe__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.subscribe__input {
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex: 0 1 526px;
+    min-height: 82px;
+    padding: 0;
+    padding-right: 22px;
+    padding-left: 36px;
+    border: none;
+    margin-bottom: 16px;
+    border-radius: 5px;
+
+}
+
+.subscribe__button {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #FF2D2D;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 218px;
+    min-height: 82px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+
 }
