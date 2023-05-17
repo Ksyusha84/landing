@@ -1,5 +1,40 @@
-.page {
+@font-face {
     font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.page {
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
     margin: 0;
     font-size: 16px;
     display: flex;
@@ -56,7 +91,8 @@
     display: flex;
     align-items: center;
     padding: 0 30px;
-    color: #F6F2F2;
+    color: #E0E0E0;
+
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
@@ -546,7 +582,6 @@
 }
 
 .subscribe__text {
-    font-family: 'Open Sans';
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -579,7 +614,6 @@
 }
 
 .subscribe__button {
-    font-family: 'Open Sans';
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -620,7 +654,6 @@
 }
 
 .feedback__heading {
-    font-family: 'Open Sans';
     font-weight: 700;
     font-size: 42px;
     line-height: 0px;
@@ -758,4 +791,35 @@
     line-height: 28px;
     margin-bottom: 27px;
     font-style: normal;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #2D2D2D;
+    padding: 0;
+
+}
+
+.footer__content {
+    box-sizing: border-box;
+    padding: 20px 0 0;
+    color: #B8B8B8;
+    min-height: 112px;
+    background-color: #2D2D2D;
+    align-items: center;
+}
+
+.footer__copyright {
+    margin: 0;
+    line-height: 28px;
+
+}
+
+.footer__link {
+    display: inline-block;
+}
+
+.footer__social-links > .footer__link:not(:last-child) {
+    margin-right: 18px;
 }
