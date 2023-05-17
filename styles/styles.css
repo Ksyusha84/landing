@@ -129,7 +129,7 @@
 .intro__content {
     position: relative;
     bottom: 12px;
-    width: 616px;
+    max-width: 616px;
     margin-bottom: 20px;
     margin-right: 74px; 
 }
@@ -429,7 +429,7 @@
 
 .team__selected-photo {
     flex-shrink: 0;
-    width: 290px;
+    max-width: 290px;
     height: 458px;
     margin-right: 30px;
     background-color: #FF3F40;
@@ -717,7 +717,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    width: 338px;
+    max-width: 338px;
     height: 68px;
     background-color: #f3f3f3;
 }
@@ -877,4 +877,68 @@
 
 .footer__social-links > .footer__link:not(:last-child) {
     margin-right: 18px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1286px) {
+    .intro {
+        flex-wrap: nowrap;
+    }
+    
+    .intro__content {
+        width: 50%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding-right: 16px;
+    }
+
+    .intro__heading {
+        font-size: 5vw;
+    }
+
+    .intro__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .products {
+        justify-content: flex-start;
+    }
+
+    .product {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .team {
+        margin-left: 12px;
+    }
+    .subscribe__heading {
+        margin-left: 56px;
+    }
+
+    .feedback-contacts {
+        padding-left: 2vw;
+    }
+
+    .feedback__body {
+        margin-right: 0;
+    }
+
+    .feedback__button {
+        margin-right: 12px;
+    }
+
+    .feedback__message {
+        margin-right: 12px;
+    }
+
+    .feedback__mail, .feedback__name {
+        margin-right: 12px;
+    }
+
+     .footer__content {
+        padding-left: 22px;
+    }
 }
