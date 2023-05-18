@@ -192,8 +192,8 @@
 }
 
 .services__lead {
-    flex: 1 1 538px;
-    max-width: 538px;
+    flex: 1 1 534px;
+    max-width: 534px;
     margin-bottom: 50px;
     margin-right: 50px;
 }
@@ -226,7 +226,7 @@
 
 .services__blocks {
     margin-top: 16px;
-    flex: 1 1;
+    flex: 1 1 auto;
     max-width: 610px;
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +236,7 @@
 
 .service {
     flex: 1 1 288px;
-    width: 288px;
+    max-width: 288px;
     margin-bottom: 50px;
     margin-left: 16px;
     margin-top: 15px;
@@ -563,7 +563,7 @@
 }
 
 .subscribe__header {
-    max-width: 1250px;
+    max-width: 1129px;
     margin: 0 auto;
     text-align: center;
 }
@@ -702,8 +702,8 @@
     background-color: #dad8d8;
     color: #000000;
     box-sizing: border-box;
-    padding-right: 54px;
-    padding-left: 54px;
+    padding-right: 74px;
+    padding-left: 74px;
     border: none;
     border-radius: 7px;
     background-color: #f3f3f3;
@@ -717,7 +717,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    max-width: 338px;
+    width: 338px;
     height: 68px;
     background-color: #f3f3f3;
 }
@@ -880,6 +880,28 @@
 }
 
 /*Responsive*/
+@media screen and (max-width: 1490px) {
+    .feedback-contacts {
+        padding-left: 1vw;
+    }
+
+    .feedback__body {
+        margin-right: 0;
+    }
+
+    .feedback__button {
+        margin-right: 12px;
+    }
+
+    .feedback__message {
+        margin-right: 12px;
+    }
+
+    .feedback__mail, .feedback__name {
+        margin-right: 12px;
+    }
+}
+
 
 @media screen and (max-width: 1286px) {
     .intro {
@@ -916,29 +938,142 @@
     }
     .subscribe__heading {
         margin-left: 56px;
+        line-height: 50px;
     }
 
-    .feedback-contacts {
-        padding-left: 2vw;
+    .feedback {
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 0 1vw;
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
     }
 
     .feedback__body {
         margin-right: 0;
     }
 
-    .feedback__button {
-        margin-right: 12px;
+    .feedback-contacts {
+        flex-wrap: wrap;
+        padding-left: initial;
+        padding-right: initial;
+        padding-bottom: 0;
+        grid-template-columns: 100%;
     }
 
-    .feedback__message {
-        margin-right: 12px;
+    .feedback__left-box {
+        flex: 0 1 auto;
+    }
+     
+    .contacts {
+        width: 100%;
+        max-width: 100%;
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
     }
 
-    .feedback__mail, .feedback__name {
-        margin-right: 12px;
+    .feedback-contacts::after {
+        content: initial;
     }
-
-     .footer__content {
+    
+    .footer__content {
         padding-left: 22px;
+    }
+
+}
+@media  screen and (max-width: 908px) {
+    .services__lead,
+    .services__blocks {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .subscribe__heading {
+        margin-left: 56px;
+        line-height: 50px;
+    }
+
+    .product {
+        max-width: 100%;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .products__item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 855px){
+    .team__members {
+        grid-template-columns: 100%;
+        grid-template-columns: auto;
+    }
+
+    .team__selected-photo {
+        grid-row: 1 / 2;
+        margin-bottom: 18px;
+        margin-right: 0;
+    }
+
+    .team__selected-info {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .members {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .services__lead {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .services__blocks {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .feedback__name,
+    .feedback__mail,
+    .feedback__message {
+        width: 100%;
+        margin-top: 5px;
+
+    }
+}
+
+@media screen  and (max-width: 700){
+    .header {
+        padding-left: 20px;
+    }    
+
+    .intro {
+        flex-wrap: wrap;
+    }
+
+    .intro__content {
+        width: 100%;
+    }
+
+    .intro__link {
+        width: 100%;
+    }
+
+    .intro__heading {
+        font-size: 40px;
     }
 }
