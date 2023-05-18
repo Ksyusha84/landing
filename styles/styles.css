@@ -33,6 +33,12 @@
     font-style: normal;
 }
 
+.header__line {
+    width: 134px;
+   /* height: 1px;*/
+    /*background-color: #FF2D2D;*/
+    border: 1px solid #FF2D2D;
+}
 .page {
     font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
     margin: 0;
@@ -180,7 +186,7 @@
 
 .intro__image {
     width: 554px;
-    height: 360px;
+    height: auto;
 }
 
 /*Services*/
@@ -188,7 +194,7 @@
 .services {
     padding-top: 106px;
     padding-bottom: 52px;
-    border-bottom: 5px solid #ECECEC;
+    border-bottom: 3px solid #ECECEC;
 }
 
 .services__lead {
@@ -317,11 +323,11 @@
 
 }
 
-.header__line {
+/*.header__line {
     border: 1px solid #FF2D2D;
     width: 134px;
     max-height: 5px;
-}
+}*/
 
 .products__filter {
     width: 100%;
@@ -413,10 +419,10 @@
 }
 
 .team__line {
-    border: 1px solid #FF2D2D;
-    width: 134px;
+    /*border: 1px solid #FF2D2D;
+    width: 134px;*/
     margin-left: 0;
-    max-height: 5px;
+    /*max-height: 5px;*/
 }
 
 .team__members {
@@ -634,23 +640,40 @@
 /*Feedback contacts*/
 
 .feedback-contacts {
-    display: flex;
+    /*display: flex;*/
+    display: grid;
     justify-content: center;
     align-items: flex-end;
     padding-top: 92px;
     padding-bottom: 110px;
     padding-left: 165px;
+    overflow: hidden;
+    grid-template-columns: 1fr 732px 108px 412px 1fr;
+    grid-template-rows: repeat (2, auto);
 }
 
 .feedback-contacts::after {
     height: 100%;
     background-color: #2D2D2D;
+    content: '';
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
 }
 
 /*Feedback*/
 
+/*feedback__left-box {
+    flex^ 1 1 auto;
+}*/
+
+.feedback {
+    column-gap: 108px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
 .feedback__header {
-    margin-bottom: 34px;
+    margin-bottom: 54px;
 
 }
 
@@ -674,9 +697,6 @@
 }
 
 .feedback__line {
-    border: 1px solid #FF2D2D;
-    width: 134px;
-    max-height: 4px;
     margin-left: 0; 
 }
 
@@ -803,6 +823,8 @@
     min-width: 580px;
     min-height: 481px;
     color: #FFFFFF;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
 }
 
 .contacts__heading {
@@ -827,13 +849,13 @@
     font-style: normal;
 }
 
-.feedback__right-box {
+/*.feedback__right-box {
     min-height: 481px;
     flex: 1 1 auto;
 }
 
 .contacts__decor {
-    background-color: #2D2D2D;
+    background-color: #2D2D2D;*/
 }
 
 .contacts::after {
@@ -905,7 +927,7 @@
 
 @media screen and (max-width: 1286px) {
     .intro {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     
     .intro__content {
